@@ -625,6 +625,20 @@
       </a>
     </div>
   </header>
+  <script>
+    let items = document.querySelector(".header__inline-menu").querySelectorAll("details");
+    items.forEach(item => {
+      item.addEventListener("mouseover", () => {
+                            item.setAttribute("open", true);
+      item.querySelector("ul").addEventListener("mouseleave", () => {
+                                                item.removeAttribute("open");
+    });
+    item.addEventListener("mouseleave", () => {
+                          item.removeAttribute("open");
+    });
+    });
+    });
+  </script>         
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
