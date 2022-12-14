@@ -451,6 +451,9 @@
           </ul>
         </nav>
       {%- else -%}
+        {% if section.blocks.size > 1 %}
+
+          {% else %}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
             {%- for link in section.settings.menu.links -%}
@@ -495,6 +498,7 @@
             {%- endfor -%}
           </ul>
         </nav>
+          {% endif %}
       {%- endif -%}
     {%- endif -%}
 
