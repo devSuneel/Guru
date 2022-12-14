@@ -7,7 +7,7 @@
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay:true,
-    infinit:true,
+    infinity:true,
     responsive: [
       {
         breakpoint: 1024,
