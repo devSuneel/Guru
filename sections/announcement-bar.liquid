@@ -1,3 +1,4 @@
+<div class="announcement--bar" data-slide>
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
@@ -21,7 +22,7 @@
       </div>
   {%- endcase -%}
 {%- endfor -%}
-
+</div>
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
