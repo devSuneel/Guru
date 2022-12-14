@@ -1,5 +1,10 @@
 
     <div class="content">
+      {% if block.settings.heading != blank %}
+        <h3>{{ block.settings.heading }}</h3>
+      {% endif %}
+      {% if block.settings.image != blank %}
       <img src="{{ block.settings.image | img_url:'master' }}" />
+      {% endif %}
     </div>
   
