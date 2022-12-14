@@ -6,7 +6,7 @@
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay:false,
+    autoplay:true,
     responsive: [
       {
         breakpoint: 1024,
