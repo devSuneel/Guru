@@ -484,9 +484,12 @@
                           {%- endfor -%}
                         </ul>
                          {% if link.levels == 2 %}
+                           {% assign count = count | plus:1 %}
                            <div class="image--container">
                               {% for block in section.blocks %}
-                                {% render 'image-block',block:block %}
+                                {% if forloop.index == count %}
+                                  {% render 'image-block',block:block %}
+                                {% endif %}
                               {% endfor %}
                           </div>
                         {% endif %}
