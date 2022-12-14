@@ -10,6 +10,9 @@
               endif
             -%}
           </span>
+          {% if customer %}
+
+          {% else %}
           <ul>
             <li>
               <a href="{{ routes.account_login_url }}">
@@ -22,6 +25,7 @@
               </a>
             </li>
           </ul>
+          {% endif %}
         </a>
       {%- endif -%}
 
