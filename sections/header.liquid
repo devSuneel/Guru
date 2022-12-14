@@ -485,7 +485,7 @@
                          {% if link.levels == 2 %}
                            <div class="image--container">
                               {% for block in section.blocks %}
-                                {% render 'image-block',section:section %}
+                                {% render 'image-block',block:block %}
                               {% endfor %}
                           </div>
                         {% endif %}
