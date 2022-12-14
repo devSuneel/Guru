@@ -483,6 +483,7 @@
                             </li>
                           {%- endfor -%}
                         </ul>
+                          {{ link.levels }}
                          {% if link.levels == 2 %}
                            {% assign count = count | plus:1 %}
                            <div class="image--container">
