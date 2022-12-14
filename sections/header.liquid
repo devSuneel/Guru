@@ -482,9 +482,12 @@
                             </li>
                           {%- endfor -%}
                         </ul>
-                        {{ forloop.index }}
                          {% if link.levels == 2 %}
-                            {% render 'image-block',section:section %}
+                           <div class="image--container">
+                              {% for block in section.blocks %}
+                                {% render 'image-block',section:section %}
+                              {% endfor %}
+                          </div>
                         {% endif %}
                       </div>
                     </details>
