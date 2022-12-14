@@ -234,10 +234,9 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
-  <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
   </head>
 
-  <body class="gradient sunil">
+  <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -294,13 +293,3 @@
     {%- endif -%}
   </body>
 </html>
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script>
-  let elem = document.querySelector('#shopify-section-announcement-bar');
-  var flkty = new Flickity( elem, {
-    // options
-    cellAlign: 'left',
-    contain: true
-  });
-</script>
