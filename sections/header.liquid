@@ -482,6 +482,9 @@
                             </li>
                           {%- endfor -%}
                         </ul>
+                         {% if link.levels == 2 %}
+                            {% render 'image-block',section:section %}
+                        {% endif %}
                       </div>
                     </details>
                   </header-menu>
