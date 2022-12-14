@@ -1,3 +1,4 @@
+$(document).ready(function(){
   let slider = $('data-slider');
   console.log("slider",slider.attr('class'));
   slider.not('.slick-initialized').slick({ 	
@@ -32,3 +33,4 @@
 
     ]
   });
+})
