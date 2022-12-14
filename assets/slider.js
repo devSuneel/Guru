@@ -1,5 +1,5 @@
   let slider = $('data-slider');
-  console.log("slider",slider);
+  console.log("slider",slider.attr('class'));
   slider.not('.slick-initialized').slick({ 	
     dots: false,
     arrows:true,
