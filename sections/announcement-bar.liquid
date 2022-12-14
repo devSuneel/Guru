@@ -1,4 +1,4 @@
-<div class="announcement--bar" data-slider>
+<div class="announcement--bar" data-slider {{ section.blocks.size }}>
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
