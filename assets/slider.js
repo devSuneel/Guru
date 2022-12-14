@@ -29,6 +29,5 @@
           slidesToScroll: 1,
         }
       }
-
     ]
   });
