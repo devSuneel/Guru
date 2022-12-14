@@ -11,7 +11,11 @@
             -%}
           </span>
           <ul>
-            <li>{{ customer.log_in | t }}</li>
+            <li>
+               <a href="{{ routes.account_register_url }}">
+                {{ 'customer.login_page.create_account' | t }}
+              </a>
+            </li>
           </ul>
         </a>
       {%- endif -%}
