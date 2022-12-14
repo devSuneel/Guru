@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  let slider = $('div[data-slider]');
+  let slider = $('[data-slider]');
   console.log("slider",slider.attr('class'));
   slider.not('.slick-initialized').slick({ 	
     dots: false,
