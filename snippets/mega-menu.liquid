@@ -1,6 +1,7 @@
 <nav class="header__inline-menu">
+      {% for block in section.blocks %}
           <ul class="list-menu list-menu--inline" role="list">
-            {%- for link in section.settings.menu.links -%}
+            {%- for link in block.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}
                   <header-menu>
@@ -41,4 +42,5 @@
               </li>
             {%- endfor -%}
           </ul>
+      {% endfor %}
         </nav>
