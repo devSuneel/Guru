@@ -452,7 +452,7 @@
         </nav>
       {%- else -%}
         {% if section.blocks.size > 0 %}
-              {% render 'mega-menu' , block:section.blocks %}
+              {% render 'mega-menu' , section:section %}
         {% else %}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
