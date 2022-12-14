@@ -3,11 +3,10 @@
   slider.not('.slick-initialized').slick({ 	
     dots: false,
     arrows:true,
-    infinite: false,
+    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay:true,
-    infinity:true,
     responsive: [
       {
         breakpoint: 1024,
