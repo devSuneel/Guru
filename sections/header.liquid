@@ -141,13 +141,13 @@
     {%- if section.settings.logo_position != 'middle-center' -%}
       {% render 'logo_header' %}
     {%- endif -%}
-    
+     {%- if section.settings.logo_position == 'top-left' or section.settings.menu == blank -%}
+       {% render 'search-box' %}
+    {%- endif -%}
     {%- if section.settings.logo_position == 'middle-center' -%}
       {% render 'logo_header' %}
     {%- endif -%}
-    {%- if section.settings.logo_position == 'top-left' or section.settings.menu == blank -%}
-       {% render 'search-box' %}
-    {%- endif -%}
+   
     {% render 'header_icons' %}
   </header>
  {% render 'navbar' %}
