@@ -322,6 +322,11 @@
       {%- endif -%}
     {%- endif -%}
 
+
+    {%- if section.settings.logo_position == 'top-left' or section.settings.menu == blank -%}
+       {% render 'search-box' %}
+    {%- endif -%}
+    
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
         <nav class="header__inline-menu">
@@ -454,9 +459,7 @@
         </h1>
       {%- endif -%}
     {%- endif -%}
-      {%- if section.settings.logo_position == 'top-left' or section.settings.menu == blank -%}
-       {% render 'search-box' %}
-    {%- endif -%}
+      
     <div class="header__icons">
       <details-modal class="header__search">
         <details>
