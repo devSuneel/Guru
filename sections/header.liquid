@@ -139,6 +139,9 @@
     {%- if section.settings.logo_position == 'middle-center' -%}
       {% render 'logo_header' %}
     {%- endif -%}
+     {%- if section.settings.logo_position == 'middle-center' -%}
+      {% render 'navbar' %}
+    {%- endif -%}
     {%- if section.settings.logo_position == 'top-left' -%}
        {% render 'search-box' %}
     {%- endif -%}
