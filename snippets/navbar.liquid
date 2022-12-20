@@ -1,9 +1,11 @@
-{% style %}
+ {% style %}
+{%- if section.settings.logo_position != 'middle-center' -%}
 nav.header__inline-menu.page-width {
     margin-inline: auto;
     text-align: center;
     border-top: 1px solid rgba(var(--color-foreground),.08);
 }
+{%- endif -%}
 {% endstyle %}
     
     {%- if section.settings.menu != blank -%}
