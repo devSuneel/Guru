@@ -2256,14 +2256,17 @@ input[type='checkbox'] {
 }
 
 @media screen and (min-width: 990px) {
-  .header--top-left,
   .header--middle-left:not(.header--has-menu) {
     grid-template-areas:
       'heading icons'
       'navigation navigation';
     grid-template-columns: 1fr auto;
   }
-
+  .header--top-left{
+    grid-template-areas: "heading left-icon icons"
+                         "navigation navigation navigation";
+    grid-template-columns: auto 1fr auto;
+}
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
     grid-template-columns: auto auto 1fr;
