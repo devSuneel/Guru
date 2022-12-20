@@ -27,9 +27,7 @@
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
-  .header__search.searchbox{
-   display:block;
-  }
+  
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -95,7 +93,13 @@
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
   
-  
+  .field__button {
+    height: 3rem;
+   }
+   .field__input, .select__select, .customer .field input, .customer select {
+    height: 3rem;
+    
+}
   @media screen and (min-width: 750px) {
     .section-header {
       margin-bottom: {{ section.settings.margin_bottom }}px;
@@ -134,7 +138,6 @@
     {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
        {% render 'search-box' %}
     {%- endif -%}
-    
     {%- if section.settings.logo_position != 'middle-center' -%}
       {% render 'logo_header' %}
     {%- endif -%}
@@ -142,11 +145,9 @@
     {%- if section.settings.logo_position == 'middle-center' -%}
       {% render 'logo_header' %}
     {%- endif -%}
-    
     {%- if section.settings.logo_position == 'top-left' or section.settings.menu == blank -%}
        {% render 'search-box' %}
     {%- endif -%}
-    
     {% render 'header_icons' %}
   </header>
  {% render 'navbar' %}
