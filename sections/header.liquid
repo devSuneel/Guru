@@ -32,12 +32,7 @@
     justify-self: start;
     margin-left: -1.2rem;
   }
-  
-  .header--top-left details-modal.header__search.searchbox {
-    width: 100%;
-    display:block;
-  }
-  
+
   .header__heading-logo {
     max-width: {{ settings.logo_width }}px;
   }
@@ -97,7 +92,9 @@
   .section-header {
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
-
+  .field:after{
+   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground),.1);
+   }
   @media screen and (min-width: 750px) {
     .section-header {
       margin-bottom: {{ section.settings.margin_bottom }}px;
