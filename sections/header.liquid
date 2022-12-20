@@ -146,7 +146,7 @@
     {% render 'header_icons' %}
   </header>
 
-  {%- if section.settings.logo_position == 'middle-center' -%}
+  {%- if section.settings.logo_position != 'middle-center' -%}
       {% render 'navbar' %}
     {%- endif -%}
                     
