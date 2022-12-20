@@ -6,7 +6,7 @@
         "template--17226334404885__e16b7abd-e644-451f-825a-a6bb0ef2010a-1670935916d5de93e3-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Values5.jpg",
+            "image": "shopify:\/\/shop_images\/model-poses-near-bushes.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -46,7 +46,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "adapt_image",
+        "slide_height": "medium",
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
