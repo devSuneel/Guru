@@ -322,7 +322,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    {% render 'navbar' %}
+   
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
@@ -425,6 +425,8 @@
      
     </div>
   </header>
+ {% render 'navbar' %}
+                    
   <script>
     let items = document.querySelector(".header__inline-menu").querySelectorAll("details");
     items.forEach(item => {
