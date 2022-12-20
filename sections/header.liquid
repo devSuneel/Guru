@@ -145,7 +145,10 @@
     
     {% render 'header_icons' %}
   </header>
- {% render 'navbar' %}
+
+  {%- if section.settings.logo_position == 'middle-center' -%}
+      {% render 'navbar' %}
+    {%- endif -%}
                     
   <script>
     let items = document.querySelector(".header__inline-menu").querySelectorAll("details");
