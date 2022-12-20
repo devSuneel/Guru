@@ -142,7 +142,7 @@
       {%- if section.settings.logo_position == 'middle-center' -%}
      {% render 'navbar' %}
     {%- endif -%}
-    {%- if section.settings.logo_position == 'top-left' or section.settings.menu == blank -%}
+    {%- if section.settings.logo_position == 'top-left' -%}
        {% render 'search-box' %}
     {%- endif -%}
     {% render 'header_icons' %}
