@@ -155,6 +155,7 @@
         "blocks": {
           "35859fbd-156f-4dc8-8dfb-f43d45056956": {
             "type": "block",
+            "disabled": true,
             "settings": {
               "heading": "Audio",
               "image": "shopify:\/\/shop_images\/AboutUs7.jpg",
@@ -163,6 +164,7 @@
           },
           "cd937393-e033-45e6-b364-3900c7eb5afa": {
             "type": "block",
+            "disabled": true,
             "settings": {
               "heading": "",
               "image": "shopify:\/\/shop_images\/Values5.jpg",
@@ -171,6 +173,7 @@
           },
           "f1778319-c8ce-462a-bd9b-c9db20708f0d": {
             "type": "block",
+            "disabled": true,
             "settings": {
               "heading": "",
               "image": "shopify:\/\/shop_images\/CraftsmanshipSlice_05_26fd1df6-1f8d-4bb3-ab58-7705079e6334.jpg",
