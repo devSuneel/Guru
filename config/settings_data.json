@@ -134,6 +134,7 @@
           },
           "c535ceaf-aba1-40a2-b253-950b4724c46b": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "offers",
               "text_alignment": "center",
