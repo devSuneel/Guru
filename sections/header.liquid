@@ -454,7 +454,9 @@
         </h1>
       {%- endif -%}
     {%- endif -%}
-
+      {%- if section.settings.logo_position == 'top-left' or section.settings.menu == blank -%}
+       {% render 'search-box' %}
+    {%- endif -%}
     <div class="header__icons">
       <details-modal class="header__search">
         <details>
