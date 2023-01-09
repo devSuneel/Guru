@@ -34,11 +34,28 @@
             "show_text_box": true,
             "text_alignment": "center"
           }
+        },
+        "b592e49e-a1ea-4d5d-9270-65e58701d654": {
+          "type": "block",
+          "settings": {
+            "desktopImage": "shopify:\/\/shop_images\/AboutUs7.jpg",
+            "link": "",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link1": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center"
+          }
         }
       },
       "block_order": [
         "4b4cc084-f666-452f-9dee-e740e8606759",
-        "d087f059-cfdc-4d7b-b9c6-f27c4862a285"
+        "d087f059-cfdc-4d7b-b9c6-f27c4862a285",
+        "b592e49e-a1ea-4d5d-9270-65e58701d654"
       ],
       "settings": {
         "slide_height": "adapt_image"
