@@ -3,10 +3,10 @@
     "5476e6b2-e891-48cd-a686-55e5dae5b606": {
       "type": "Slider_Main",
       "blocks": {
-        "4b4cc084-f666-452f-9dee-e740e8606759": {
+        "d087f059-cfdc-4d7b-b9c6-f27c4862a285": {
           "type": "block",
           "settings": {
-            "desktopImage": "shopify:\/\/shop_images\/Values5.jpg",
+            "desktopImage": "shopify:\/\/shop_images\/model-poses-near-bushes.jpg",
             "link": "",
             "heading": "Image slide",
             "heading_size": "h1",
@@ -19,10 +19,11 @@
             "text_alignment": "center"
           }
         },
-        "d087f059-cfdc-4d7b-b9c6-f27c4862a285": {
+        "4b4cc084-f666-452f-9dee-e740e8606759": {
           "type": "block",
+          "disabled": true,
           "settings": {
-            "desktopImage": "shopify:\/\/shop_images\/model-poses-near-bushes.jpg",
+            "desktopImage": "shopify:\/\/shop_images\/AboutUs7.jpg",
             "link": "",
             "heading": "Image slide",
             "heading_size": "h1",
@@ -53,8 +54,8 @@
         }
       },
       "block_order": [
-        "4b4cc084-f666-452f-9dee-e740e8606759",
         "d087f059-cfdc-4d7b-b9c6-f27c4862a285",
+        "4b4cc084-f666-452f-9dee-e740e8606759",
         "b592e49e-a1ea-4d5d-9270-65e58701d654"
       ],
       "settings": {
@@ -63,7 +64,6 @@
     },
     "e16b7abd-e644-451f-825a-a6bb0ef2010a": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "template--17226334404885__e16b7abd-e644-451f-825a-a6bb0ef2010a-1670935916d5de93e3-0": {
           "type": "slide",
