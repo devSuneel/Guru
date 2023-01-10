@@ -2,7 +2,7 @@
   let slider = $('[data-slider]');
   let sliderBehaviour = {
     autoplay:slider.attr('data-autoplay'),
-    speed:slider.attr('data-speed');
+    speed:slider.attr('data-speed')
   }
   console.log(sliderBehaviour,"sliderBehaviour");
   slider.not('.slick-initialized').slick({ 	
@@ -11,6 +11,7 @@
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    speed:1000,
     autoplay:true,
     responsive: [
       {
