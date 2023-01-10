@@ -140,6 +140,16 @@
                 widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
                 class: 'desktopImage'
             }}
+            {{
+              block.settings.mobileImage
+              | image_url: width: 3840
+              | image_tag:
+                loading: 'lazy',
+                height: height,
+                sizes: '100vw',
+                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                class: 'mobileImage'
+            }}
           {%- else -%}
             {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
