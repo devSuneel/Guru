@@ -27,6 +27,11 @@
     slide_to_show="1"
   >
     {% for block in section.blocks %}
+      <style>
+        #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
+          opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
+        }
+      </style>
       {% if block.settings.desktopImage or block.settings.mobileImage %}
         {% assign desktopImage = block.settings.desktopImage | img_url: width: 3840 %}
         {% assign mobileImage = block.settings.mobileImage | img_url: width: 3840 %}
