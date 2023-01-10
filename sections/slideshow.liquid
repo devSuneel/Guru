@@ -32,7 +32,7 @@
   aria-label="{{ section.settings.accessibility_info | escape }}"
 >
   <div
-    class="banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}"
+    class="{% if length > 1 %} customSliderBanner {% endif %} banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}"
     id="Slider-{{ section.id }}"
     aria-live="polite"
     aria-atomic="true"
@@ -142,7 +142,20 @@
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
-
+<script>
+  $( document ).ready(function() {
+    $('.customSliderBanner').not('.slick-initialized').slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      slidesToShow:1,
+      slidesToScroll: 1,
+      autoplay:true,
+      prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='15' height='12' viewBox='0 0 6.591 11.061'><path d='M0,10,5,5,0,0' transform='translate(6.061 10.53) rotate(180)' fill='none' stroke='#383838' stroke-width='1.5'></path></svg></button>",
+      nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='15' height='12' viewBox='0 0 6.591 11.061'><path d='M0,10,5,5,0,0' transform='translate(0.53 0.53)' fill='none' stroke='#383838' stroke-width='1.5'></path></svg></button>"
+    });
+    });
+</script>
 {% schema %}
 {
   "name": "t:sections.slideshow.name",
