@@ -1,10 +1,10 @@
   
   let slider = $('[data-slider]');
   let sliderBehaviour = {
-    autopla:"false",
-    speed:"3000",
-    slidesToShow:1,
-    slidesToScroll:1,
+    autoplay:slider.attr('data-autoplay'),
+    speed:slider.attr('data-speed'),
+    slidesToShow:slider.attr('slidesToShow'),
+    slidesToScroll:slider.attr('slidesToScroll'),
   }
   console.log(sliderBehaviour,"sliderBehaviour");
   slider.not('.slick-initialized').slick({ 	
