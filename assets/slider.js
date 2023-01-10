@@ -1,8 +1,8 @@
-
+  
   let slider = $('[data-slider]');
   let sliderBehaviour = {
-    autoplay:slider.attr('data-autoplay'),
-    speed:slider.attr('data-speed'),
+    autopla:"false",
+    speed:"3000",
     slidesToShow:1,
     slidesToScroll:1,
   }
