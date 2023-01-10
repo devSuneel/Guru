@@ -142,6 +142,7 @@
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
+{% render 'assets--container' %}
 <script>
   $( document ).ready(function() {
     $('.customSliderBanner').not('.slick-initialized').slick({
