@@ -24,13 +24,7 @@
     }
   {%- endstyle -%}
 {%- endif -%}
-{%- for block in section.blocks -%}
-  <style>
-    #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
-      opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
-    }
-  </style>
-{% endfor %}
+
 <slideshow-component
   class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
   role="region"
@@ -38,7 +32,7 @@
   aria-label="{{ section.settings.accessibility_info | escape }}"
 >
   <div
-    class="{% if section.blocks.size > 1 %} customSliderBanner {% endif %} banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}"
+    class="{% if section.blocks.si > 1 %} customSliderBanner {% endif %} banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}"
     id="Slider-{{ section.id }}"
     aria-live="polite"
     aria-atomic="true"
@@ -46,6 +40,11 @@
     data-speed="{{ section.settings.change_slides_speed }}"
   >
     {%- for block in section.blocks -%}
+      <style>
+        #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
+          opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
+        }
+      </style>
       <div
         class="slideshow__slide grid__item grid--1-col slider__slide"
         id="Slide-{{ section.id }}-{{ forloop.index }}"
