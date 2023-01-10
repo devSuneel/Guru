@@ -36,8 +36,8 @@
       <div class="media__outer__wrapper">
         <div class="media__slider">
           <a href="{{ block.settings.link | blank:'#' }}">
-            <img src="{{ desktopImage }}" class="desktopImage" loading="lazy" width="100%" height="100%" alt="{{ desktopImage }}">
-            <img src="{{ mobileImage }}" class="mobileImage" loading="lazy" width="100%" height="100%" alt="{{ mobileImage }}">
+            <img src="{{ desktopImage }}" class="desktopImage" loading="lazy" sizes="100vw" width="100%" height="100%" alt="{{ desktopImage }}">
+            <img src="{{ mobileImage }}" class="mobileImage" loading="lazy" sizes="100vw" width="100%" height="100%" alt="{{ mobileImage }}">
           </a>
         </div>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
