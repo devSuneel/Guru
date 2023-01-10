@@ -35,9 +35,8 @@
         {% assign mobileImage = 'https://cdn.shopify.com/s/files/1/0594/9987/2442/files/blank.png?v=1662965095' %}
       {% endif %}
       <div class="media__outer__wrapper">
-        <div class="media__slider">
+        <div class="media__slider slideshow__media banner__media media">
           <a
-            class="slideshow__media banner__media media"
             href="{{ block.settings.link | blank:'#' }}"
           >
             {%- assign height = block.settings.desktopImage.width
