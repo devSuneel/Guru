@@ -1,6 +1,9 @@
 
   let slider = $('[data-slider]');
-  console.log("slider",slider);
+  let sliderBehaviour = {
+    autoplay:slider.attr('data-autoplay')
+  }
+  console.log(sliderBehaviour,"sliderBehaviour");
   slider.not('.slick-initialized').slick({ 	
     dots: false,
     arrows:true,
