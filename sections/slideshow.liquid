@@ -114,37 +114,31 @@
   </div>
 </slideshow-component>
 <style>
-    .mobileImage {
-        display:none!important;
-        width: 100%;
-    }
-    .desktopImage {
-        display: block!important;
-        width: 100%;
-    }
-    .CED-slider{
-        position:relative;
-    }
-    .slick-dotted.slick-slider {
-        margin-bottom: 0!important;
-    }
-    .slick-dots {
-        bottom: 10px!important;
-    }
-  .slick-slide {
-    height: 0px!important;
-   }
-   .slick-slide.slick-active {
-      height: 100% !important;
-   }
-     @media (max-width: 750px){
-    .mobileImage {
-            display:block!important;
-          }
-          .desktopImage {
-            display:none!important;
-          }
-    }
+  .mobileImage {
+      display:none!important;
+      width: 100%;
+  }
+  .desktopImage {
+      display: block!important;
+      width: 100%;
+  }
+  .CED-slider{
+      position:relative;
+  }
+  .slick-dotted.slick-slider {
+      margin-bottom: 0!important;
+  }
+  .slick-dots {
+      bottom: 10px!important;
+  }
+   @media (max-width: 750px){
+  .mobileImage {
+          display:block!important;
+        }
+        .desktopImage {
+          display:none!important;
+        }
+  }
 </style>
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
@@ -159,7 +153,7 @@
       slidesToShow:1,
       slidesToScroll: 1,
       autoplay:true,
-      adaptiveHeight: true,
+      adaptiveHeight: false,
       prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns='http://www.w3.org/2000/svg' width='15' height='12' viewBox='0 0 6.591 11.061'><path d='M0,10,5,5,0,0' transform='translate(6.061 10.53) rotate(180)' fill='none' stroke='#383838' stroke-width='1.5'></path></svg></button>",
       nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns='http://www.w3.org/2000/svg' width='15' height='12' viewBox='0 0 6.591 11.061'><path d='M0,10,5,5,0,0' transform='translate(0.53 0.53)' fill='none' stroke='#383838' stroke-width='1.5'></path></svg></button>"
     });
