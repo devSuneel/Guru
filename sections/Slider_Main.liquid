@@ -28,8 +28,8 @@
   >
     {% for block in section.blocks %}
       {% if block.settings.desktopImage or block.settings.mobileImage %}
-        {% assign desktopImage = block.settings.desktopImage | img_url: 'master' %}
-        {% assign mobileImage = block.settings.mobileImage | img_url: 'master' %}
+        {% assign desktopImage = block.settings.desktopImage | img_url: width: 3840 %}
+        {% assign mobileImage = block.settings.mobileImage | img_url: width: 3840 %}
       {% else %}
         {% assign desktopImage = 'https://cdn.shopify.com/s/files/1/0594/9987/2442/files/blank.png?v=1662965095' %}
         {% assign mobileImage = 'https://cdn.shopify.com/s/files/1/0594/9987/2442/files/blank.png?v=1662965095' %}
