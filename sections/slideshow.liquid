@@ -114,32 +114,37 @@
   </div>
 </slideshow-component>
 <style>
-  .mobileImage {
-      display:none!important;
-      width: 100%;
-  }
-  .desktopImage {
-      display: block!important;
-      width: 100%;
-  }
-  .CED-slider{
-      position:relative;
-  }
-  .slick-dotted.slick-slider {
-      margin-bottom: 0!important;
-  }
-  .slick-dots {
-      bottom: 10px!important;
-  }
-
-   @media (max-width: 750px){
-  .mobileImage {
-          display:block!important;
-        }
-        .desktopImage {
-          display:none!important;
-        }
-  }
+    .mobileImage {
+        display:none!important;
+        width: 100%;
+    }
+    .desktopImage {
+        display: block!important;
+        width: 100%;
+    }
+    .CED-slider{
+        position:relative;
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: 0!important;
+    }
+    .slick-dots {
+        bottom: 10px!important;
+    }
+  .slick-slide {
+    height: 0px!important;
+   }
+   .slick-slide.slick-active {
+      height: 100% !important;
+   }
+     @media (max-width: 750px){
+    .mobileImage {
+            display:block!important;
+          }
+          .desktopImage {
+            display:none!important;
+          }
+    }
 </style>
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
