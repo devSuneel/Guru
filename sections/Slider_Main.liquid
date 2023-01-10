@@ -36,7 +36,7 @@
       {% endif %}
       <div class="media__outer__wrapper">
         <div class="media__slider">
-          <a
+          <div
             class="slideshow__media banner__media media{% if block.settings.desktopImage == blank %} placeholder{% endif %}"
             href="{{ block.settings.link | blank:'#' }}"
           >
@@ -62,7 +62,7 @@
               height="100%"
               alt="{{ block.settings.mobileImage.alt }}"
             >
-          </a>
+          </div>
         </div>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
