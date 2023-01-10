@@ -2,13 +2,13 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 
-{%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.desktopImage != blank -%}
+{%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Slider-{{ section.id }}::before,
       #Slider-{{ section.id }} .media::before,
       #Slider-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-        padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.desktopImage.aspect_ratio | times: 100 }}%;
+        padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.image.aspect_ratio | times: 100 }}%;
         content: '';
         display: block;
       }
@@ -17,7 +17,7 @@
     @media screen and (min-width: 750px) {
       #Slider-{{ section.id }}::before,
       #Slider-{{ section.id }} .media::before {
-        padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.desktopImage.aspect_ratio | times: 100 }}%;
+        padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.image.aspect_ratio | times: 100 }}%;
         content: '';
         display: block;
       }
@@ -127,14 +127,11 @@
         aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
         tabindex="-1"
       >
-        <div class="slideshow__media banner__media media{% if block.settings.desktopImage == blank %} placeholder{% endif %}">
-          {%- if block.settings.desktopImage -%}
-            {%- assign height = block.settings.desktopImage.width
-              | divided_by: block.settings.desktopImage.aspect_ratio
-              | round
-            -%}
+        <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
+          {%- if block.settings.image -%}
+            {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
             {{
-              block.settings.desktopImage
+              block.settings.image
               | image_url: width: 3840
               | image_tag:
                 loading: 'lazy',
@@ -367,7 +364,7 @@
         {
           "type":"image_picker",
           "label":"Desktop Image",
-          "id":"desktopImage"
+          "id":"image"
         },
         {
           "type":"image_picker",
