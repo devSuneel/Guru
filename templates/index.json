@@ -2,7 +2,6 @@
   "sections": {
     "5476e6b2-e891-48cd-a686-55e5dae5b606": {
       "type": "Slider_Main",
-      "disabled": true,
       "blocks": {
         "d087f059-cfdc-4d7b-b9c6-f27c4862a285": {
           "type": "block",
