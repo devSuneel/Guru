@@ -9,7 +9,7 @@
   console.log(sliderBehaviour,"sliderBehaviour");
   slider.not('.slick-initialized').slick({ 	
     dots: false,
-    arrows:true,
+    arrows:sliderBehaviour.autoplay,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
