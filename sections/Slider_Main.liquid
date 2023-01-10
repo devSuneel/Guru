@@ -34,16 +34,8 @@
         {% assign desktopImage = 'https://cdn.shopify.com/s/files/1/0594/9987/2442/files/blank.png?v=1662965095' %}
         {% assign mobileImage = 'https://cdn.shopify.com/s/files/1/0594/9987/2442/files/blank.png?v=1662965095' %}
       {% endif %}
-      <div
-        class="slideshow__slide grid__item grid--1-col slider__slide"
-        id="Slide-{{ section.id }}-{{ forloop.index }}"
-        {{ block.shopify_attributes }}
-        role="group"
-        aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
-        aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
-        tabindex="-1"
-      >
-        <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
+      <div class="media__outer__wrapper">
+        <div class="media__slider">
           <a
             class="slideshow__media banner__media media"
             href="{{ block.settings.link | blank:'#' }}"
