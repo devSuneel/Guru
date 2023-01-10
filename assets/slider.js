@@ -11,10 +11,10 @@
     dots: false,
     arrows:sliderBehaviour.autoplay,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: sliderBehaviour.slidesToShow,
+    slidesToScroll: sliderBehaviour.slidesToScroll,
     speed:1000,
-    autoplay:true,
+    autoplay:sliderBehaviour.autoplay,
     responsive: [
       {
         breakpoint: 1024,
