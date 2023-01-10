@@ -37,9 +37,14 @@
       <div class="media__outer__wrapper">
         <div class="media__slider">
           <a href="{{ block.settings.link | blank:'#' }}">
+            {%- assign height = block.settings.desktopImage.width
+              | divided_by: block.settings.desktopImage.aspect_ratio
+              | round
+            -%}
+
             <img
               src="{{ desktopImage }}"
-              {{ block.settings.desktopImage.width }}
+              {{ height }}
               class="desktopImage"
               loading="lazy"
               sizes="100vw"
