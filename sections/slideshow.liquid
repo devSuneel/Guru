@@ -127,11 +127,14 @@
         aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
         tabindex="-1"
       >
-        <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
-          {%- if block.settings.image -%}
-            {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
+        <div class="slideshow__media banner__media media{% if block.settings.desktopImage == blank %} placeholder{% endif %}">
+          {%- if block.settings.desktopImage -%}
+            {%- assign height = block.settings.desktopImage.width
+              | divided_by: block.settings.desktopImage.aspect_ratio
+              | round
+            -%}
             {{
-              block.settings.image
+              block.settings.desktopImage
               | image_url: width: 3840
               | image_tag:
                 loading: 'lazy',
