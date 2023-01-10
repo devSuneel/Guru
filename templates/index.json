@@ -69,7 +69,8 @@
         "template--17226334404885__e16b7abd-e644-451f-825a-a6bb0ef2010a-1670935916d5de93e3-0": {
           "type": "slide",
           "settings": {
-            "desktopImage": "shopify:\/\/shop_images\/model-poses-near-bushes.jpg",
+            "image": "shopify:\/\/shop_images\/model-poses-near-bushes.jpg",
+            "mobileImage": "shopify:\/\/shop_images\/Values5.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -87,7 +88,8 @@
         "template--17226334404885__e16b7abd-e644-451f-825a-a6bb0ef2010a-1670935916d5de93e3-1": {
           "type": "slide",
           "settings": {
-            "desktopImage": "shopify:\/\/shop_images\/CraftsmanshipSlice_05.jpg",
+            "image": "shopify:\/\/shop_images\/CraftsmanshipSlice_05.jpg",
+            "mobileImage": "shopify:\/\/shop_images\/1.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
