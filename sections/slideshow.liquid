@@ -41,6 +41,8 @@
     {% endif %}
     data-autoplay="{{ section.settings.auto_rotate }}"
     data-speed="{{ section.settings.change_slides_speed }}"
+    slidesToShow="1"
+    slidesToScroll="1"
   >
     {%- for block in section.blocks -%}
       <!--
