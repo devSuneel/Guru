@@ -37,7 +37,7 @@
       <div class="media__outer__wrapper">
         <div class="media__slider">
           <a
-            class="slideshow__media banner__media media{% if block.settings.desktopImage == blank %} placeholder{% endif %}"
+            class="slideshow__media banner__media media"
             href="{{ block.settings.link | blank:'#' }}"
           >
             {%- assign height = block.settings.desktopImage.width
