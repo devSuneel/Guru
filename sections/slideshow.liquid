@@ -32,7 +32,7 @@
   aria-label="{{ section.settings.accessibility_info | escape }}"
 >
   <div
-    class=" banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}"
+    class="{% if section.blocks.size > 1 %} customSliderBanner {% endif %} banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}"
     id="Slider-{{ section.id }}"
     aria-live="polite"
     aria-atomic="true"
@@ -112,32 +112,32 @@
   </div>
 </slideshow-component>
 <style>
-  .mobileImage {
-      display:none!important;
-      width: 100%;
-  }
-  .desktopImage {
-      display: block!important;
-      width: 100%;
-  }
-  .CED-slider{
-      position:relative;
-  }
-  .slick-dotted.slick-slider {
-      margin-bottom: 0!important;
-  }
-  .slick-dots {
-      bottom: 10px!important;
-  }
+    .mobileImage {
+        display:none!important;
+        width: 100%;
+    }
+    .desktopImage {
+        display: block!important;
+        width: 100%;
+    }
+    .CED-slider{
+        position:relative;
+    }
+  /*   .slick-dotted.slick-slider {
+        margin-bottom: 0!important;
+    }
+    .slick-dots {
+        bottom: 10px!important;
+    } */
 
-   @media (max-width: 750px){
-  .mobileImage {
-          display:block!important;
-        }
-        .desktopImage {
-          display:none!important;
-        }
-  }
+     @media (max-width: 750px){
+    .mobileImage {
+            display:block!important;
+          }
+          .desktopImage {
+            display:none!important;
+          }
+    }
 </style>
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
