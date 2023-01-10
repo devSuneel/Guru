@@ -112,7 +112,7 @@
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
-        "slider_visual": "counter",
+        "slider_visual": "numbers",
         "auto_rotate": false,
         "change_slides_speed": 5,
         "show_text_below": true,
