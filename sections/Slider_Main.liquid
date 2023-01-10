@@ -36,7 +36,10 @@
       {% endif %}
       <div class="media__outer__wrapper">
         <div class="media__slider">
-          <a href="{{ block.settings.link | blank:'#' }}">
+          <a
+            class="slideshow__media banner__media media{% if block.settings.desktopImage == blank %} placeholder{% endif %}"
+            href="{{ block.settings.link | blank:'#' }}"
+          >
             {%- assign height = block.settings.desktopImage.width
               | divided_by: block.settings.desktopImage.aspect_ratio
               | round
